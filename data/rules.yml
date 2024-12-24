@@ -1,0 +1,82 @@
+rules:
+  - rule: welcome user
+    conversation_start: true  # this rule only applies at the beginning of a conversation
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: User thanks the bot and exits
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+
+  - rule: User provides feedback and affirms
+    steps:
+      - intent: feedback
+      - action: utter_feedback
+
+  - rule: User denies and the conversation continues
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - rule: Ask for time when the user requests it
+    steps:
+      - intent: ask_for_time
+      - action: action_ask_for_time
+
+  - rule: User asks for homework help
+    steps:
+      - intent: ask_for_homework_help
+      - action: utter_ask_for_homework_help
+
+  - rule: User asks for study tips
+    steps:
+      - intent: ask_for_tips_study
+      - action: utter_ask_for_tips_study
+
+  - rule: Handle unwanted input by asking for clarification
+    steps:
+      - intent: unwanted_input
+      - action: utter_unwanted_input
+
+  - rule: Handle irrelevant topic and refocus conversation
+    steps:
+      - intent: irrelevant_topic
+      - action: utter_irrelevant_topic
+
+  - rule: Handle spam or repetition from the user
+    steps:
+      - intent: spam_or_repetition
+      - action: utter_spam_or_repetition
+
+  - rule: User compliments the bot
+    steps:
+      - intent: compliment
+      - action: utter_compliment
+
+  - rule: User asks for bot's identity and capabilities
+    steps:
+      - intent: bot_identity
+      - action: utter_bot_identity
+
+  - rule: User asks for bot's origin and personality
+    steps:
+      - intent: bot_origin
+      - action: utter_bot_origin
+
+  - rule: User says goodbye after help
+    steps:
+      - intent: ask_for_help
+      - action: utter_ask_for_help
+
+
+  - rule: Irrelevant input followed by goodbye
+    steps:
+      - intent: irrelevant_topic
+      - action: utter_irrelevant_topic
+
+  - rule: User thanks the bot and asks for help
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you

@@ -1,0 +1,157 @@
+intents:
+  - greet
+  - goodbye
+  - fetch_courses
+  - thank_you
+  - affirm
+  - deny
+  - ask_for_help
+  - ask_for_time
+  - compliment
+  - feedback
+  - ask_for_tips_study
+  - ask_for_homework_help
+  - unwanted_input
+  - spam_or_repetition
+  - irrelevant_topic
+  - bot_identity
+  - bot_capabilities
+  - bot_origin
+  - bot_personality
+
+
+entities:
+  - course_id
+  - course_name
+  - time
+  - feedback_type
+
+
+slots:
+  time:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+
+  courses:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+
+actions:
+  - action_fetch_courses
+  - action_ask_for_time
+
+
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+    - text: "Hi there! What can I help you with?"
+    - text: "Greetings! How may I assist?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+    - text: "See you later! Feel free to reach out anytime."
+    - text: "Bye for now! Take care!"
+
+  utter_ask_for_time:
+    - text: "The current time is {time}."
+    - text: "It’s {time} right now."
+    - text: "It’s now {time}."
+
+  utter_compliment:
+    - text: "Thank you for your kind words!"
+    - text: "I appreciate that, you're awesome too!"
+    - text: "That's so nice of you to say!"
+
+  utter_feedback:
+    - text: "Thank you for sharing your feedback."
+    - text: "I appreciate your input, it helps me improve."
+    - text: "Your feedback means a lot to me. Thanks!"
+
+  utter_ask_for_tips_study:
+    - text: "Here are some study tips: [1. Create a study schedule, 2. Take breaks, 3. Review notes daily]."
+    - text: "Try these tips: [Organize your material, Study in short sessions, Practice active recall]."
+    - text: "To study effectively, consider these: [Set clear goals, Avoid multitasking, Test yourself frequently]."
+
+  utter_ask_for_homework_help:
+    - text: "Let me know what part of your homework you’re struggling with."
+    - text: "Sure, tell me about your homework."
+    - text: "I’m here to help. Please describe the problem."
+
+  utter_unwanted_input:
+    - text: "I'm not sure I understand. Could you clarify?"
+    - text: "That doesn’t seem like something I can assist with."
+    - text: "Hmm, could you rephrase or ask something else?"
+
+  utter_spam_or_repetition:
+    - text: "Please avoid repeating messages unnecessarily."
+    - text: "I noticed some repetition. Let’s keep it focused."
+    - text: "Let’s avoid spamming and keep the conversation productive."
+
+  utter_irrelevant_topic:
+    - text: "That seems off-topic. Let’s get back to the discussion."
+    - text: "I’m here to help with related queries. Let’s focus."
+    - text: "Could we stick to the topic, please?"
+
+  utter_bot_identity:
+    - text: "I’m an AI assistant here to help you."
+    - text: "I’m a virtual assistant designed to make your life easier."
+    - text: "I’m an intelligent bot built to assist you."
+
+  utter_bot_capabilities:
+    - text: "I can help with tasks like fetching courses, providing study tips, and more."
+    - text: "I’m capable of answering questions, fetching assignments, and offering guidance."
+    - text: "Here’s what I can do: [Help with studies, Fetch course data, Answer general queries]."
+
+  utter_bot_origin:
+    - text: "I was created by a team of developers to assist users like you."
+    - text: "My creators designed me to help with daily tasks and queries."
+    - text: "I was built to be a helpful companion for your needs."
+
+  utter_bot_personality:
+    - text: "I aim to be friendly, helpful, and efficient."
+    - text: "My personality is designed to be approachable and supportive."
+    - text: "I strive to make your experience enjoyable and helpful."
+
+  utter_no_courses:
+    - text: "You don't have any courses in Google Classroom."
+    - text: "It seems you're not enrolled in any courses yet."
+
+  utter_thank_you:
+    - text: "You're welcome! Let me know if you need anything else."
+    - text: "Happy to help! Don't hesitate to ask if you need more assistance."
+    - text: "Anytime! I'm here for you."
+    - text: "No worries at all! Have a great day!"
+    - text: "You're most welcome!"
+    - text: "Glad I could help! Is there anything else?"
+
+  utter_affirm:
+    - text: "Got it! Let me know how I can help further."
+    - text: "Great! Let’s continue."
+    - text: "Perfect! What’s next?"
+    - text: "Wonderful! Let’s get started."
+    - text: "Absolutely! I’m on it."
+    - text: "Okay, let me proceed with that."
+
+  utter_deny:
+    - text: "Alright, let me know if you need anything else."
+    - text: "Got it! Just let me know if you change your mind."
+    - text: "Okay, no problem at all!"
+    - text: "That's fine! Let me know how I can assist instead."
+    - text: "Alright, feel free to ask me anything else."
+    - text: "Understood! Let’s focus on something else."
+
+  utter_ask_for_help:
+    - text: "Of course! What do you need help with?"
+    - text: "Absolutely! How can I assist you today?"
+    - text: "Sure thing! Just tell me what you need."
+    - text: "I’m here to help. What can I assist you with?"
+    - text: "Certainly! Let me know what you need guidance on."
+    - text: "No problem! How can I make things easier for you?"
+
+  utter_fetch_courses:
+    - text: "Here are your courses: {courses}"

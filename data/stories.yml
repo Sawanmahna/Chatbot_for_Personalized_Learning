@@ -1,0 +1,128 @@
+
+stories:
+  - story: greet and ask for help
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_for_help
+      - action: utter_ask_for_help
+
+  - story: fetch courses
+    steps:
+      - intent: fetch_courses
+      - action: action_fetch_courses
+
+  - story: user gives feedback and affirms
+    steps:
+      - intent: feedback
+      - action: utter_feedback
+      - intent: affirm
+      - action: utter_affirm
+
+  - story: user asks for study tips
+    steps:
+      - intent: ask_for_tips_study
+      - action: utter_ask_for_tips_study
+
+  - story: user compliments bot
+    steps:
+      - intent: compliment
+      - action: utter_compliment
+
+  - story: user asks for time and homework help
+    steps:
+      - intent: ask_for_time
+      - action: action_ask_for_time
+      - intent: ask_for_homework_help
+      - action: utter_ask_for_homework_help
+
+  - story: unwanted input or irrelevant topic
+    steps:
+      - intent: unwanted_input
+      - action: utter_unwanted_input
+      - intent: irrelevant_topic
+      - action: utter_irrelevant_topic
+
+  - story: spam or repetition handling
+    steps:
+      - intent: spam_or_repetition
+      - action: utter_spam_or_repetition
+
+  - story: goodbye after help
+    steps:
+      - intent: ask_for_help
+      - action: utter_ask_for_help
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: ask about bot's identity and capabilities
+    steps:
+      - intent: bot_identity
+      - action: utter_bot_identity
+      - intent: bot_capabilities
+      - action: utter_bot_capabilities
+
+  - story: ask about bot origin and personality
+    steps:
+      - intent: bot_origin
+      - action: utter_bot_origin
+      - intent: bot_personality
+      - action: utter_bot_personality
+
+  - story: user asks for courses, denies assignments
+    steps:
+      - intent: fetch_courses
+      - action: utter_fetch_courses
+      - intent: deny
+      - action: utter_deny
+
+  - story: compliment and ask for study tips
+    steps:
+      - intent: compliment
+      - action: utter_compliment
+      - intent: ask_for_tips_study
+      - action: utter_ask_for_tips_study
+
+  - story: user asks for time and provides feedback
+    steps:
+      - intent: ask_for_time
+      - action: action_ask_for_time
+      - intent: feedback
+      - action: utter_feedback
+
+  - story: user asks for homework help and feedback
+    steps:
+      - intent: ask_for_homework_help
+      - action: utter_ask_for_homework_help
+      - intent: feedback
+      - action: utter_feedback
+
+  - story: user asks for help and shares feedback
+    steps:
+      - intent: ask_for_help
+      - action: utter_ask_for_help
+      - intent: feedback
+      - action: utter_feedback
+
+  - story: user says goodbye after assistance
+    steps:
+      - intent: ask_for_help
+      - action: utter_ask_for_help
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: irrelevant input followed by goodbye
+    steps:
+      - intent: irrelevant_topic
+      - action: utter_irrelevant_topic
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: greet, ask for time, and say goodbye
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_for_time
+      - action: action_ask_for_time
+      - intent: goodbye
+      - action: utter_goodbye

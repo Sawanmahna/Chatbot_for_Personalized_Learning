@@ -1,0 +1,196 @@
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey
+      - Good morning
+      - Good afternoon
+      - Good evening
+      - Hi there
+      - Hey there
+      - Greetings
+      - What's up?
+
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - Bye
+      - See you later
+      - Talk to you later
+      - See you soon
+      - Catch you later
+      - Bye bye
+      - Take care
+      - Have a nice day
+
+  - intent: fetch_courses
+    examples: |
+      - What are my courses?
+      - Show me my courses
+      - List my courses
+      - Can you list my courses?
+      - What classes am I enrolled in?
+      - What subjects do I have?
+      - Tell me my courses
+      - What courses do I have?
+
+  - intent: thank_you
+    examples: |
+      - Thank you
+      - Thanks
+      - Thanks a lot
+      - Thank you very much
+      - I appreciate it
+      - Thanks for your help
+      - Thank you for your assistance
+      - Many thanks
+      - Much appreciated
+
+  - intent: affirm
+    examples: |
+      - Yes
+      - Yeah
+      - Yep
+      - Sure
+      - Absolutely
+      - Of course
+      - Definitely
+      - Right
+      - Correct
+
+  - intent: deny
+    examples: |
+      - No
+      - Nope
+      - No way
+      - Not at all
+      - I don't think so
+      - Absolutely not
+      - Definitely not
+      - Negative
+      - Nah
+  
+  - intent: ask_for_help
+    examples: |
+      - I need help
+      - Can you help me?
+      - I need some assistance
+      - Help me
+      - Could you assist me?
+      - Can you support me?
+      - I need some guidance
+      - Please help
+
+  - intent: ask_for_time
+    examples: |
+      - What time is it?
+      - Tell me the current time
+      - Can you give me the time?
+      - What’s the time now?
+      - Do you know the time?
+      - I want to know the time
+      - Could you tell me the time?
+
+  - intent: compliment
+    examples: |
+      - You’re amazing
+      - Great job
+      - I like you
+      - You’re so helpful
+      - You’re awesome
+      - You’re the best
+      - I appreciate you
+      - You’re fantastic
+
+  - intent: feedback
+    examples: |
+      - I have some feedback
+      - Here’s my feedback
+      - I’d like to share some feedback
+      - You’re doing great
+      - You could do better
+      - This is amazing
+      - That wasn’t helpful
+      - I think this could improve
+
+  - intent: ask_for_tips_study
+    examples: |
+      - Do you have any study tips?
+      - How can I study better?
+      - Help me study effectively
+      - I need tips for studying
+      - How do I focus while studying?
+      - Can you give me study advice?
+      - What’s the best way to study?
+
+  - intent: ask_for_homework_help
+    examples: |
+      - Can you help me with my homework?
+      - I need help with my assignment
+      - Can you assist with this problem?
+      - How do I solve this?
+      - I’m stuck on my homework
+      - Help me with my project
+      - What’s the answer to this question?
+
+  - intent: unwanted_input
+    examples: |
+      - I don’t think this is relevant
+      - What are you even saying?
+      - This doesn’t make sense
+      - Irrelevant
+      - Off-topic
+      - What is this?
+
+  - intent: spam_or_repetition
+    examples: |
+      - Stop repeating yourself
+      - You already said that
+      - You’re spamming me
+      - Don’t spam
+      - That’s repetitive
+      - This is spam
+
+  - intent: irrelevant_topic
+    examples: |
+      - That’s not related
+      - This is off-topic
+      - Stick to the point
+      - Let’s talk about something relevant
+      - This doesn’t relate to the topic
+
+  - intent: bot_identity
+    examples: |
+      - Who are you?
+      - What are you?
+      - Are you a bot?
+      - Tell me about yourself
+      - Are you an assistant?
+      - What’s your name?
+
+  - intent: bot_capabilities
+    examples: |
+      - What can you do?
+      - How can you help me?
+      - What are your features?
+      - Tell me your capabilities
+      - What services do you offer?
+      - How can you assist?
+
+  - intent: bot_origin
+    examples: |
+      - Who made you?
+      - Where are you from?
+      - Who created you?
+      - Tell me about your origin
+      - Who developed you?
+      - Where do you come from?
+
+  - intent: bot_personality
+    examples: |
+      - What’s your personality like?
+      - Are you friendly?
+      - What kind of bot are you?
+      - Do you have a personality?
+      - Tell me about your character
